@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="16.692">
+    <testcase classname="API Testing Example" name="Get service call testing , validate response code" time="3.203">
+        <system-out><![CDATA[Given I set Get service all api endpoint....................................passed
+When I perform a Get service call...........................................passed
+Then I validate the response code is 200....................................passed
+Then I validate userid are returned and more than 0.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Verify ducks search in google" name="Search for Ducks in google" time="13.167">
+        <system-out><![CDATA[Given Initiate webdriver....................................................passed
+And I open and navigate to google.com.......................................passed
+When I Search "Ducks" in google.............................................passed
+Then I Verify ducks results are showing - "Duck - Wikipedia"................passed
+]]></system-out>
+    </testcase>
+</testsuite>

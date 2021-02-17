@@ -1,0 +1,202 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T02:18:10.237Z",
+        "line": 22,
+        "name": "Get service call testing , validate response code",
+        "description": "",
+        "id": "api-testing-example;get-service-call-testing---validate-response-code",
+        "after": [
+          {
+            "result": {
+              "duration": 9024000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.DuckSearch.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 783933000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I set Get service all api endpoint",
+            "match": {
+              "location": "StepDefinitions.APITesting.i_set_get_service_all_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1613341000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I perform a Get service call",
+            "match": {
+              "location": "StepDefinitions.APITesting.i_perform_a_get_service_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37533000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I validate the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.APITesting.i_validate_the_response_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 687969000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I validate userid are returned and more than 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefinitions.APITesting.i_validate_userid_are_returned_and_more_than(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      }
+    ],
+    "name": "API Testing Example",
+    "description": "",
+    "id": "api-testing-example",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/apiTesting.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T02:18:13.473Z",
+        "line": 3,
+        "name": "Search for Ducks in google",
+        "description": "",
+        "id": "verify-ducks-search-in-google;search-for-ducks-in-google",
+        "after": [
+          {
+            "result": {
+              "duration": 305165000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.DuckSearch.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4080769000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Initiate webdriver",
+            "match": {
+              "location": "StepDefinitions.DuckSearch.initiate_webdriver()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2448434000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open and navigate to google.com",
+            "match": {
+              "location": "StepDefinitions.DuckSearch.open_google_com()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5954539000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Search \"Ducks\" in google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ducks",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinitions.DuckSearch.search_ducks_in_google(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 367234000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Verify ducks results are showing - \"Duck - Wikipedia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duck - Wikipedia",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.DuckSearch.verify_ducks_results_are_showing(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify ducks search in google",
+    "description": "",
+    "id": "verify-ducks-search-in-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/ducks.feature",
+    "tags": []
+  }
+]
